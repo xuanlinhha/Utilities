@@ -46,7 +46,7 @@ public class MeaningCombine {
 			pm.setViet(hanviet.get(m.getHan()));
 			pm.setMeanings(m.getMeanings());
 			// write
-			FileUtils.write(new File("post_process/char_meanings_post.txt"), g.toJson(pm), "UTF-8", true);
+			FileUtils.write(new File("post_process/char_meanings_post.txt"), g.toJson(pm) + "\n", "UTF-8", true);
 		}
 		// System.out.println("hanviet size = " + hanviet.size());
 
@@ -59,7 +59,7 @@ public class MeaningCombine {
 			pm.setViet(hanviet.get(m.getHan()));
 			pm.setMeanings(m.getMeanings());
 			// write
-			FileUtils.write(new File("post_process/word_meanings_post.txt"), g.toJson(pm), "UTF-8", true);
+			FileUtils.write(new File("post_process/word_meanings_post.txt"), g.toJson(pm) + "\n", "UTF-8", true);
 		}
 	}
 
